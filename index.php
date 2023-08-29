@@ -1,58 +1,35 @@
-<?php
+<!DOCTYPE html>
+<html>
+<body>
+<img src="kcclogo.png" width=700/>
 
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
- */
+<h1>Deliciousness in every bite!</h1>
+<p>Every cookie made at the Kevin Cookie company is crafted with only the finest ingredients. Butter from grass fed cows. Unbleached flour with the best flavor and textures. Organic sugar only from India. Eggs from chickens that listen to classical music and watching the tv shows. Even our water is special. It comes from the Cascade Mountain springs that we hike up to retrieve. Baking is our passion and we take it very seriously.</p>
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
-|
-*/
+<h1>Ingredients</h1>
+<ul>
+<li>1 cup Butter or margarine, softened</li>
+<li>3/4 cup Sugar</li>
+<li>3/4 cup Brown sugar, packed</li>
+<li>2 Eggs, large</li>
+<li>2 teaspoons Vanilla</li>
+<li>2 1/4 cups Flour, unsifted</li>
+<li>1 teaspoon Baking soda</li>
+<li>1/2 teaspoon Salt</li>
+<li>1 cup Walnuts or pecans, chopped (optional)</li>
+<li>2 cups KCC Bittersweet 60% Cacao Baking Chips</li>
+</ul>
+<h1>Baking instructions</h1>
+<ul>
+<li>Heat oven to 500ºF.</li>
+<li>Stir flour with baking soda and salt; set aside.</li>
+<li>In large mixing bowl, beat butter with sugar, and brown sugar at medium speed until creamy and lightened in color.</li>
+<li>Add eggs and vanilla, one at a time. Mix on low speed until incorporated.</li>
+<li>Gradually blend dry mixture into creamed mixture. Stir in nuts and chocolate chips.</li>
+<li>Drop by tablespoon onto ungreased cookie sheets.</li>
+<li>Bake for 9 to 11 minutes or until chocolate chip cookies are golden brown.</li>
+<li>Enjoy!</li>
+</ul>
 
-require __DIR__.'/bootstrap/autoload.php';
-
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
-
-$app = require_once __DIR__.'/bootstrap/app.php';
-
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
-
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-
-$kernel->terminate($request, $response);
+</body>
+</html>
